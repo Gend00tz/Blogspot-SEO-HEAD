@@ -1,0 +1,4 @@
+	<!-- Thumbnail image, 72 &#215; 72 pixels -->
+	<b:if cond='data:blog.postImageThumbnailUrl'>
+		<meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
+    </b:if>
