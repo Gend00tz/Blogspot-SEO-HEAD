@@ -1,0 +1,80 @@
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:class='data:blog.languageDirection + &quot; no-js rwd &quot; + data:blog.pageType' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+  	<meta charset='utf-8'/>
+	<include expiration='7d' path='*.css'/>
+	<include expiration='7d' path='*.js'/>
+	<include expiration='3d' path='*.gif'/>
+	<include expiration='3d' path='*.jpeg'/>
+	<include expiration='3d' path='*.jpg'/>
+	<include expiration='3d' path='*.png'/>
+	<meta content='IE=9; IE=8; IE=7; IE=EDGE; chrome=1' http-equiv='X-UA-Compatible'/>
+  <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
+	<meta content='width' name='MobileOptimized'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<meta content='yes' name='apple-mobile-web-app-capable'/>
+	<meta content='TTFH5zECWxbIsxRD43V7PQRjtI4W7u1CvIqUTzhu0zc' name='google-site-verification'/>
+	<meta content='946cdbae4a9e4986' name='yandex-verification'/>
+	<meta content='80844DAFECF8E69D72F0B02C1B2C7F5F' name='msvalidate.01'/>
+	<meta content='b98612ee377242adb11d92feae374431' name='p:domain_verify'/>
+	<link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
+	<b:include data='blog' name='all-head-content'/>
+    <title><data:view.title.escaped/></title>
+	<b:if cond='data:blog.homepageUrl != data:blog.url'>
+	<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/></b:if>
+	<b:if cond='data:blog.url == data:blog.homepageUrl'>
+	<meta content='Technology Tips dan Triks, Step-By-Step Video Tutorial, Programming, Linux Devops, Linux Art Desktop, Template Theme Blogger Wordpress' name='keywords'/></b:if>
+  <meta content='ahmadnurhadirmw' name='Author'/>
+	<meta content='general' name='rating'/>
+	<meta content='ID-JB' name='geo.region'/>
+	<meta content='Depok' name='geo.placename'/>
+	<meta content='-6.402484;106.794241' name='geo.position'/>
+	<meta content='-6.402484, 106.794241' name='ICBM'/>
+        <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <meta expr:content='data:blog.pageName' property='og:title'/>
+        <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+        <meta content='article' property='og:type'/>
+    </b:if>
+    <b:if cond='data:blog.postImageUrl'>
+        <meta expr:content='data:blog.postImageUrl' property='og:image'/>
+    <b:else/>
+    <b:if cond='data:blog.postImageThumbnailUrl'>
+        <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+        	<meta content='Ahmad NurHadi Rama Wijaya' property='og:image:alt'/>
+	<meta content='158' property='og:image:width'/>
+	<meta content='158' property='og:image:height'/>
+    </b:if></b:if>
+    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+        <meta expr:content='data:blog.metaDescription' name='og:description'/>
+    </b:if>
+    <meta expr:content='data:blog.title' property='og:site_name'/>
+    <meta expr:content='data:blog.homepageUrl' name='twitter:domain'/>
+    <meta expr:content='data:blog.pageName' name='twitter:title'/>
+    <b:if cond='data:blog.postImageUrl'>
+      <meta content='summary_large_image' name='twitter:card'/>
+      <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+    <b:else/>
+      <meta content='summary' name='twitter:card'/>
+      <b:if cond='data:blog.postImageThumbnailUrl'>
+        <meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/> 
+      </b:if>
+    </b:if>
+    <meta expr:content='data:blog.pageName' name='twitter:title'/>
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+    </b:if>
+	<meta content='https://www.facebook.com/ahmadnurhadirmw' property='article:author'/>
+	<meta content='https://www.facebook.com/ahmadnurhadirmw2' property='article:publisher'/>
+<meta content='1018144081695662' property='fb:app_id'/>
+<meta content='100013373434360' property='fb:admins'/>
+<meta content='100013373434360' property='fb:profile_id'/>
+<meta content='239038620239218' property='fb:pages'/>
+	<meta content='id_ID' property='og:locale'/>
+	<meta content='en_GB' property='og:locale:alternate'/>
+	<meta content='en_US' property='og:locale:alternate'/>
+	<meta content='@ahmadnurhadirmw' name='twitter:site'/>
+	<meta content='@ahmadnurhadirmw' name='twitter:creator'/>
+
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Open+Sans:400,400i,700,700i' media='all' rel='stylesheet' type='text/css'/>
+   <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'/>
+  	<link href='//1.bp.blogspot.com' rel='dns-prefetch'/><link href='//2.bp.blogspot.com' rel='dns-prefetch'/><link href='//3.bp.blogspot.com' rel='dns-prefetch'/><link href='//4.bp.blogspot.com' rel='dns-prefetch'/><link href='//www.blogger.com' rel='dns-prefetch'/><link href='//fonts.googleapis.com' rel='dns-prefetch'/><link href='//resources.blogblog.com' rel='dns-prefetch'/><link href='//www.facebook.com' rel='dns-prefetch'/><link href='//plus.google.com' rel='dns-prefetch'/><link href='//twitter.com' rel='dns-prefetch'/><link href='//www.youtube.com' rel='dns-prefetch'/><link href='//feedburner.google.com' rel='dns-prefetch'/><link href='//feeds.feedburner.com' rel='dns-prefetch'/><link href='//github.com' rel='dns-prefetch'/><link href='//platform.twitter.com' rel='dns-prefetch'/><link href='//apis.google.com' rel='dns-prefetch'/><link href='//connect.facebook.net' rel='dns-prefetch'/><link href='//www.google-analytics.com' rel='dns-prefetch'/><link href='//pagead2.googlesyndication.com' rel='dns-prefetch'/><link href='//googleads.g.doubleclick.net' rel='dns-prefetch'/><link href='//www.gstatic.com' rel='dns-prefetch'/><link href='//www.googletagservices.com' rel='dns-prefetch'/><link href='//static.xx.fbcdn.net' rel='dns-prefetch'/><link href='//tpc.googlesyndication.com' rel='dns-prefetch'/><link href='//syndication.twitter.com' rel='dns-prefetch'/><link href='//fonts.gstatic.com' rel='dns-prefetch'/><link href='https://cdn.rawgit.com' rel='dns-prefetch'/><link href='https://lh3.googleusercontent.com' rel='dns-prefetch'/><link href='https://tpc.googlesyndication.com' rel='dns-prefetch'/><link href='https://i.ytimg.com' rel='dns-prefetch'/><link href='https://i3.ytimg.com' rel='dns-prefetch'/><link href='https://img.youtube.com' rel='dns-prefetch'/><link href='https://www.googletagmanager.com' rel='dns-prefetch'/><link href='https://adservice.google.co.id/' rel='dns-prefetch'/><link href='https://adservice.google.com/' rel='dns-prefetch'/>
