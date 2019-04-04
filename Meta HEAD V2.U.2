@@ -1,0 +1,168 @@
+<html b:css='true' b:responsive='true' b:templateVersion='1.0.0' b:version='2' class='v2' expr:class='data:blog.languageDirection + &quot; no-js rwd &quot; + data:blog.pageType' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale'> 
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+<!--[if IE]><meta content='IE=edge; IE=9; IE=8; IE=7; chrome=1' http-equiv='X-UA-Compatible'/><![endif]-->
+<b:include data='blog' name='all-head-content'/>
+<b:if cond='data:blog.pageType in {&quot;index&quot;} and data:blog.homepageUrl == data:blog.url'>
+	<title><data:blog.pageTitle/></title>
+<b:else/>
+<b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
+	<title><data:blog.pageName/> | <data:blog.title/></title>
+<b:else/>
+<b:if cond='data:blog.pageType in {&quot;index&quot;} and data:blog.pageName == &quot;&quot;'>
+	<title>All Posts | <data:blog.title/></title>
+<b:else/>
+<b:if cond='data:blog.pageType in {&quot;error_page&quot;}'>
+	<title>Page Not Found | <data:blog.title/></title>
+<b:else/>
+	<title><data:blog.pageName/></title>
+</b:if>
+</b:if>
+</b:if>
+</b:if>
+  <!-- [Start] Optimal Foto -->
+<include expiration='7d' path='*.css'/>
+<include expiration='7d' path='*.js'/>
+<include expiration='3d' path='*.gif'/>
+<include expiration='3d' path='*.jpeg'/>
+<include expiration='3d' path='*.jpg'/>
+<include expiration='3d' path='*.png'/>
+<!-- [End] Optimal Foto -->
+   <!-- [Start] Icon Devices -->
+<link href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/apple-touch-icon-180x180-precomposed.png' rel='apple-touch-icon' sizes='180x180'/>
+<link href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'/>
+<link href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/favicon-194x194.png' rel='icon' sizes='194x194' type='image/png'/>
+<link href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/android-chrome-192x192.png' rel='icon' sizes='192x192' type='image/png'/>
+<link href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'/>
+<link href='//cdn.staticaly.com/gh/xxxxxxxx/xxxxxxxx/master/site.webmanifest' rel='manifest'/>
+<meta content='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/mstile-144x144.png' name='msapplication-TileImage'/>
+<link color='#xxxxxxxx' href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/safari-pinned-tab.svg' rel='mask-icon'/>
+<!-- [End] Icon Devices -->
+
+<!-- [Start] Plugin Device -->
+<meta content='width' name='MobileOptimized'/>
+<meta content='true' name='HandheldFriendly'/>
+<meta content='xxxxxxxx' name='apple-mobile-web-app-title'/>
+<meta content='xxxxxxxx' name='application-name'/>
+<meta content='#xxxxxxxx' name='msapplication-TileColor'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#xxxxxxxx' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='all' name='googlebot'/>
+<meta content='all' name='msnbot'/>
+<meta content='all' name='Googlebot-Image'/>
+<meta Content='snippet' name='googlebot'/>
+<meta content='global' name='distribution'/>
+<meta content='7 days' name='revisit-after'/>
+<!-- [End] Plugin Device -->
+
+<!-- [Start] Verifikasi Blog -->
+<meta content='xxxxxxxx' name='yandex-verification'/>
+<meta content='xxxxxxxx' name='msvalidate.01'/>
+<meta content='xxxxxxxx' name='google-site-verification'/>
+<!-- [End] Verifikasi Blog -->
+
+<!-- Noindex halaman pencarian, label, dan arsip -->
+<b:if cond='data:blog.pageType in {&quot;archive&quot;} or data:blog.searchLabel or data:blog.searchQuery'>
+  <meta content='index, follow, all' name='robots'/>
+</b:if>
+<meta content='INDEX, FOLLOW' name='GOOGLEBOT'/>
+
+<meta content='Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot, InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, bing, CNET, Googlebot' name='search engines'/>
+
+<meta expr:content='data:post.timestampISO8601' itemprop='datePublished'/>
+<meta expr:content='data:post.timestampISO8601' itemprop='dateModified'/>
+
+<!-- [Start] Lokasi, Tempat Blog Posting DLL -->
+<link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
+<meta content='xxxxxxxx-xxxxxxxx' name='geo.region'/>
+<meta content='xxxxxxxx' name='geo.placename'/>
+<meta content='xxxxxxxx;xxxxxxxx' name='geo.position'/>
+<meta content='xxxxxxxx, xxxxxxxx' name='ICBM'/>
+<!-- [End] Lokasi, Tempat Blog Posting DLL -->
+
+<meta content='xxxxxxxx' name='Author'/>
+<meta content='general' name='rating'/>
+
+<!--Head Open Graph Tag -->
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+		<meta expr:content='data:blog.pageTitle' property='og:title'/>		
+	<b:else/>
+		<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+			<b:if cond='false'><!--dis-blog-title-from-item-title-start--></b:if><b:if cond='false'><b:if cond='false'><!--dis-blog-title-from-item-title-end--></b:if>
+				<meta expr:content='data:blog.pageName' property='og:title'/>				
+			<b:else/>				
+				<meta expr:content='data:blog.pageName + &quot; | &quot; + data:blog.title' property='og:title'/>
+</b:if></b:if>
+  <meta content='article' property='og:type'/>
+  <meta content='https://www.facebook.com/xxxxxxxx' property='article:author'/>
+  <meta content='https://www.facebook.com/xxxxxxxx' property='article:publisher'/>
+  <link href='https://plus.google.com/xxxxxxxx/about' rel='author'/>
+  <b:else/>
+ 
+  <meta content='website' property='og:type'/>
+</b:if>
+
+<meta expr:content='data:blog.title or data:blog.pageName' property='og:site_name'/>
+<meta expr:content='data:view.title.escaped' name='twitter:title'/>
+<b:if cond='data:blog.postImageUrl'>
+  <meta content='summary_large_image' name='twitter:card'/>
+  <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+  <meta expr:content='data:blog.pageTitle' name='twitter:image:alt'/>
+  <b:else/>
+  <meta content='summary' name='twitter:card'/>
+  <b:if cond='data:blog.postImageThumbnailUrl'>
+    <meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/>
+    <meta expr:content='data:blog.pageTitle' name='twitter:image:alt'/>
+  </b:if>
+</b:if>
+<b:if cond='data:blog.metaDescription'>
+  <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+</b:if>
+<meta expr:content='data:blog.homepageUrl' name='twitter:domain'/>
+<meta content='xxxxxxxx' property='fb:app_id'/>
+<meta content='xxxxxxxx' property='fb:admins'/>
+<meta content='xxxxxxxx' property='fb:profile_id'/>
+<meta content='xxxxxxxx' property='fb:pages'/>
+<meta content='id_ID' property='og:locale'/>
+<meta content='en_GB' property='og:locale:alternate'/>
+<meta content='en_US' property='og:locale:alternate'/>
+<meta content='@xxxxxxxx' name='twitter:site'/>
+<meta content='@xxxxxxxx' name='twitter:creator'/>
+<!-- [End] Social Media Meta Tag -->
+
+<link crossorigin='anonymous' href='//1.bp.blogspot.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//2.bp.blogspot.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//3.bp.blogspot.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//4.bp.blogspot.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//www.blogger.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//fonts.googleapis.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//resources.blogblog.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//www.facebook.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//twitter.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//www.youtube.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//feedburner.google.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//feeds.feedburner.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//platform.twitter.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//apis.google.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//connect.facebook.net' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//www.google-analytics.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//pagead2.googlesyndication.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//googleads.g.doubleclick.net' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//www.gstatic.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//www.googletagservices.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//static.xx.fbcdn.net' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//tpc.googlesyndication.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//syndication.twitter.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//fonts.gstatic.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//github.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//stackpath.bootstrapcdn.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//lh3.googleusercontent.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//tpc.googlesyndication.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//i.ytimg.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//i3.ytimg.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//img.youtube.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//www.googletagmanager.com' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//adservice.google.co.id/' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//adservice.google.com/' rel='preconnect dns-prefetch'/>
+<link crossorigin='anonymous' href='//cdn.staticaly.com' rel='preconnect dns-prefetch'/>
