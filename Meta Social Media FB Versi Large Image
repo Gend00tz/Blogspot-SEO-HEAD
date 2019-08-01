@@ -1,4 +1,0 @@
-<!-- Large image, original size -->
-<b:if cond='data:blog.postImageUrl'>
-	<meta expr:content='data:blog.postImageUrl' property='og:image'/>
-  </b:if>
