@@ -1,8 +1,13 @@
-<html b:css='true' b:responsive='true' b:templateVersion='1.0.0' b:version='2' class='v2' expr:class='data:blog.languageDirection + data:blog.pageType' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale'> 
+<html b:css='true' b:responsive='true' b:templateVersion='1.0.0' b:version='2' class='v2' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale'>
 <head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
 <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 <!--[if IE]><meta content='IE=edge; IE=9; IE=8; IE=7; chrome=1' http-equiv='X-UA-Compatible'/><![endif]-->
+
+<!-- All Head Content -->
 <b:include data='blog' name='all-head-content'/>
+<!-- END All Head Content -->
+
+<!--Title -->
 <b:if cond='data:blog.pageType in {&quot;index&quot;} and data:blog.homepageUrl == data:blog.url'>
 	<title><data:blog.pageTitle/></title>
 <b:else/>
@@ -20,6 +25,7 @@
 </b:if>
 </b:if>
 </b:if>
+
   <!-- [Start] Optimal Foto -->
 <include expiration='7d' path='*.css'/>
 <include expiration='7d' path='*.js'/>
@@ -28,6 +34,7 @@
 <include expiration='3d' path='*.jpg'/>
 <include expiration='3d' path='*.png'/>
 <!-- [End] Optimal Foto -->
+
    <!-- [Start] Icon Devices -->
 <link href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/apple-touch-icon-180x180-precomposed.png' rel='apple-touch-icon' sizes='180x180'/>
 <link href='//cdn.staticaly.com/img/raw.githubusercontent.com/xxxxxxxx/xxxxxxxx/master/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'/>
