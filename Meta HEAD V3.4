@@ -52,8 +52,8 @@
 <!-- [End] Verifikasi Blog -->
 
 <!-- Noindex halaman pencarian, label, dan arsip -->
-<b:if cond='data:blog.pageType in {"archive"} == data:blog.searchQuery == data:blog.pageType in {"error_page"}'>
-  <meta content='noindex, follow, all' name='robots'/>
+<b:if cond='data:view.isArchive == data:view.search.query == data:blog.pageType in {"error_page"}'>
+  <meta content='noindex, all' name='robots'/>
 </b:if>
 
 <meta content='Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot, InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, bing, CNET, Googlebot' name='search engines'/>
